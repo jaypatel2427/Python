@@ -1,0 +1,16 @@
+Firstname = input("Enter your Name : ")
+Lastname = input("Enter your Last Name : ")
+Age = input("Enter your Age : ")
+Gender = input("Enter your Gender : ")
+Goal = input("Enter your Goal : ")
+Hobbies = input("Enter your Hobbies : ")
+Institute_name = input("Enter your Institute Name : ")
+
+
+print("welcome",Firstname,Lastname)
+print("You are",Age,"years old")
+print("You are a",Gender)
+print("Your Goal is to become a",Goal)
+print("Your Hobbies are",Hobbies)
+print("You are studying in",Institute_name)
+print("Thank you for providing your information....!")
