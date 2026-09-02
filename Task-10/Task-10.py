@@ -20,25 +20,48 @@ while True:
             "student_age": int(input("Age: ")),
             "student_grade": input("Grade: "),
             "student_dob": (input("Date of Birth (YYYY-MM-DD): "),),
-            "student_subjects": set(input("Subjects (comma-separated): ").split(","))
+            "student_subjects": set(input("Subjects (comma-seprated):").split(","))
         })
         print("\nStudent added Successfully!")
-        
+
     elif choice == 2:
         for data in all_students:
             print(data)
-            
+
     elif choice == 3:
-        pass
-        
+        user_data = int(input("Enter Roll_no"))
+        my_list2 = []
+        for data in all_students:
+            if (user_data,) == data.get("roll_no"):
+                data["student_name"] = input("Name:")
+                data["student_age"] = int(input("Age:"))
+                data["student_grade"] = input("Grade:")
+                data["student_dob"] = (input("Date of Birth (YYYY-MM-DD):"),)
+                data["student_subjects"] = set(input("Subjects (comma-seprated):").split(","))
+            my_list2.append(data)
+        all_students = my_list2
+        print("Updated Successfully")
+
     elif choice == 4:
-        pass
-        
+        user_data = int(input("Enter Roll_no"))
+        my_list2 = []
+        for data in all_students:
+            if (user_data,) == data.get("roll_no"):
+                pass
+            else:
+                my_list2.append(data)
+        all_students = my_list2
+        print("Deleted Successfully")
+
     elif choice == 5:
-        pass
-        
+        user_data = input("Enter Subject Name :")
+        for data in all_students:
+            if user_data in data.get("student_subjects"):
+                print(data)
+
     elif choice == 6:
+        print("Program Terminate")
         break
-        
+
     else:
         print("Please Enter Valid Choice!!")
