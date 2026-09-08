@@ -28,17 +28,18 @@ while True:
         break
 
 
+
 print("\n============ INVENTORY SUMMARY ============")
 
 
-# Total items
+
 total_items = len(item_names)
 
 print("\nTotal Items:", total_items)
 print("Items entered:", item_names)
 
 
-# Total quantity
+
 total_quantity = sum(item_quantities)
 
 print("\nTotal Quantity in Stock:", total_quantity)
@@ -51,7 +52,7 @@ for i in range(total_items):
 print("=", total_quantity)
 
 
-# Average quantity
+
 average_quantity = total_quantity / total_items
 
 print("\nAverage Quantity per Item:", average_quantity)
@@ -59,7 +60,7 @@ print("\nAverage Quantity per Item:", average_quantity)
 print("Explanation:", total_quantity, "/", total_items)
 
 
-# Highest quantity
+
 highest_quantity = max(item_quantities)
 
 for i in range(total_items):
@@ -72,7 +73,7 @@ print("\nMost Stocked Item:", most_stocked_name)
 print("Quantity:", highest_quantity, "units")
 
 
-# Lowest quantity
+
 lowest_quantity = min(item_quantities)
 
 for i in range(total_items):
@@ -85,10 +86,11 @@ print("\nLeast Stocked Item:", least_stocked_name)
 print("Quantity:", lowest_quantity, "units")
 
 
+
 print("\n--------------------------------------------")
 
 
-# Unique categories
+
 print("\nUnique Categories in Inventory:")
 
 for category in category_set:
@@ -97,10 +99,11 @@ for category in category_set:
 print("Explanation: Set does not allow duplicate values.")
 
 
+
 print("\n--------------------------------------------")
 
 
-# Sort items by quantity
+
 print("\nItems Sorted by Quantity (High to Low):")
 
 sorted_names = item_names[:]
@@ -127,10 +130,11 @@ for i in range(total_items):
     print(i + 1, ".", sorted_names[i], "-", sorted_quantities[i], "units")
 
 
+
 print("\n--------------------------------------------")
 
 
-# Categories in alphabetical order
+
 print("\nCategories in Alphabetical Order:")
 
 sorted_categories = sorted(category_set)
@@ -138,6 +142,7 @@ sorted_categories = sorted(category_set)
 for i in range(len(sorted_categories)):
 
     print(i + 1, ".", sorted_categories[i])
+
 
 
 print("\n============ END OF REPORT ============")
