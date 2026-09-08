@@ -4,7 +4,7 @@ print("Welcome to Inventory List Analyzer!")
 item_names = []
 item_quantities = []
 category_set = set()
-
+ 
 while True:
 
     name = input("\nEnter item name: ")
